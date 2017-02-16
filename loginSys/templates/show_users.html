@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hi,users</h1>
+    {% for entry in result %}
+    <div><p>Username: {{ entry.username }}    Sex: <b>{{ entry.sex }}    E-mail: {{ entry.email }} Height: {{ entry.height}} Weight: {{ entry.weight}}BMI: {{ entry.bmi }}</b></p></div>
+    {% endfor %}
+{% endblock %}

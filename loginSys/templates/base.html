@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - Our Users</title>
+    {% else %}
+    <title>Our Users</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Users_info <a href="/update">Update</a></div>
+    <div>New User <a href="/index">Register</a></div>
+    <div>Delete User <a href="/delete">Delete</a></div>
+    <div> <a href="/unhealthy">Find Unhealthy users</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
